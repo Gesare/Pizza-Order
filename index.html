@@ -1,0 +1,91 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Best Pizza online</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <p class="tit">BEST PIZZA ONLINE ORDER
+                <img src="images/LOGO/logo.png" height="100" width="100"></p>
+        </div>
+        <div class="card bg-dark text-white">
+            <img src="images/backgrounds/pizza1.jpeg" id="back">
+            <div class="card-img-overlay">
+                <div class="row text-center">
+                    <div class="col-md-3 col-sm-3 ">
+                        <label>Choose the size</label><br>
+                        <input type="radio" name="size" value="small"> Small<br>
+                        <input type="radio" name="size" value="medium"> Medium<br>
+                        <input type="radio" name="size" value="large"> Large
+                    </div>
+                    <div class="col-md-3 col-sm-3 text-center">
+                        <label>Choose the crust</label><br>
+                        <input type="radio" value="crispy" name="crust">Crispy<br>
+                        <input type="radio" value="stuffed" name="crust">Stuffed<br>
+                        <input type="radio" value="gluten-free" name="crust">Gluten-free
+                    </div>
+                </div><br>
+                <div class="row text-center">
+                    <div class="col-md-6 col-sm-6 ">
+                        <label>Choose toppings</label>
+                        <select>
+                            <option value="" disabled selected>--toppings of your choice--</option>
+                            <option value="mushrooms">Mushrooms</option>
+                            <option value="onions">Onions</option>
+                            <option value="pepperoni">Pepperoni</option>
+                            <option value="bacon">Bacon and shrimp</option>
+                            <option value="barbecue">Barbecue sauce and chicken</option>
+                            <option value="taco">Taco toppings</option>
+                            <option value="cheese">Extra cheese</option>
+                            <option value="peppers">Green peppers</option>
+                        </select>
+                    </div>
+                </div><br>
+                <div class="row text-center">
+                    <div class="col-md-6 col-sm-6">
+                        <label>Quantity</label>
+                        <select>
+                            <option value="" disabled selected>--order as much as possible--</option>
+                            <option value="quantity">1</option>
+                            <option value="quantity">2</option>
+                            <option value="quantity">3</option>
+                            <option value="quantity">4</option>
+                            <option value="quantity">5</option>
+                            <option value="quantity">6</option>
+                            <option value="quantity">7</option>
+                            <option value="quantity">8</option>
+                            <option value="quantity">9</option>
+                            <option value="quantity">10</option>
+                        </select>
+                    </div>
+                </div><br>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col sm-6">
+                        <button id="pick" type="submit">Pickup</button>
+                        <button id="deliver" type="submit">Deliver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
