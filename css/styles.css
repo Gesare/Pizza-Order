@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 body{
     font-family: 'Muli', sans-serif;
+    background-color: burlywood;
 }
 .jumbotron{
     padding-top: 7%;
@@ -13,6 +14,9 @@ body{
 }
 #back{
     opacity: 0.5;
+}
+#delivery,#order,#price,#check{
+    display: none;
 }
 button{
     background-color: tomato;
