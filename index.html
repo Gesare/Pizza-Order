@@ -30,15 +30,21 @@
                 <div class="row text-center">
                     <div class="col-md-3 col-sm-3 ">
                         <label>Choose the size</label><br>
-                        <input type="radio" name="size" value="small"> Small<br>
-                        <input type="radio" name="size" value="medium"> Medium<br>
-                        <input type="radio" name="size" value="large"> Large
+                        <input type="radio" name="size" value="small"> Small,    Rwf 1800<br>
+                        <input type="radio" name="size" value="medium"> Medium,   Rwf 3000<br>
+                        <input type="radio" name="size" value="large"> Large,   Rwf 5000
                     </div>
                     <div class="col-md-3 col-sm-3 text-center">
                         <label>Choose the crust</label><br>
                         <input type="radio" value="crispy" name="crust">Crispy<br>
                         <input type="radio" value="stuffed" name="crust">Stuffed<br>
                         <input type="radio" value="gluten-free" name="crust">Gluten-free
+                    </div>
+                    <div class="col-md-6 col-sm-6 text-center">
+                        <label for="price" id="price">
+                            <h1>Price</h1>
+                        </label>
+                        <label for="amount" id="pizza-amount"></label>
                     </div>
                 </div><br>
                 <div class="row text-center">
@@ -56,29 +62,30 @@
                             <option value="peppers">Green peppers</option>
                         </select>
                     </div>
+                    <div class="col-md-6 col-sm-6" >
+                        <label for="delivery" id="delivery">
+                            <h1>Delivery charges</h1>
+                        </label>
+                        <label for="charges" id="charges"></label><br>
+                        <label for="details" id="order">
+                            <h3>Details</h3>
+                        </label><br>
+                        <label for="resume" id="details"></label>
+                    </div>
                 </div><br>
                 <div class="row text-center">
                     <div class="col-md-6 col-sm-6">
                         <label>Quantity</label>
-                        <select>
-                            <option value="" disabled selected>--order as much as possible--</option>
-                            <option value="quantity">1</option>
-                            <option value="quantity">2</option>
-                            <option value="quantity">3</option>
-                            <option value="quantity">4</option>
-                            <option value="quantity">5</option>
-                            <option value="quantity">6</option>
-                            <option value="quantity">7</option>
-                            <option value="quantity">8</option>
-                            <option value="quantity">9</option>
-                            <option value="quantity">10</option>
-                        </select>
+                        <input type="number" min="1" placeholder="--order as much as possible--" id="number">
                     </div>
                 </div><br>
                 <div class="row justify-content-center">
                     <div class="col-md-6 col sm-6">
                         <button id="pick" type="submit">Pickup</button>
                         <button id="deliver" type="submit">Deliver</button>
+                    </div>
+                    <div class="col-md-4 col-sm-4 justify-content-end">
+                        <button id="check" type="submit">Checkout</button>
                     </div>
                 </div>
             </div>
