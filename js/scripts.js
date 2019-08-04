@@ -26,7 +26,8 @@ var crispy = $("#crispy:checked"). val();
 var stuffed = $("#stuffed:checked"). val();
 var gluten = $("#gluten:checked"). val();
 
-var 
+var topping = $('#toppings').val();
+var number
 
 
 
