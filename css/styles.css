@@ -1,21 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 body{
     font-family: 'Muli', sans-serif;
-    background-color: burlywood;
+    background-image: url('file:///home/wecode/Documents/moringa-school-projects/Best-Pizza/images/backgrounds/talbe1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .jumbotron{
     padding-top: 7%;
     margin-top: 3%;
-    /* position: fixed; */
+    
     background-color: lightsalmon;
+    border-radius: 0px;
 }
 .tit{
     font-size: 28px;
 }
+#content{
+    border-radius: 0px;
+}
 #back{
     opacity: 0.5;
 }
-#delivery,#order,#price,#check{
+#delivery,#order,#price,#check,#add,#charges{
     display: none;
 }
 button{
