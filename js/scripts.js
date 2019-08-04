@@ -18,20 +18,26 @@ function Order(size, crust, topping, quantity) {
     this.topping = pizzaTopping;
     this.quantity = numberOfPizza;
 }
+var small = $("#small:checked"). val();
+var medium = $("#medium:checked"). val();
+var large = $("#large:checked"). val();
 
+var crispy = $("#crispy:checked"). val();
+var stuffed = $("#stuffed:checked"). val();
+var gluten = $("#gluten:checked"). val();
 
 
 
 
 // UI Logic
 $(document).ready(function () {
-    var small = new size("Small", 1500);
-    var medium = new size("Medium", 2500);
-    var large = new size("Large", 4500);
+    // var small = new size("Small", 1500);
+    // var medium = new size("Medium", 2500);
+    // var large = new size("Large", 4500);
 
-    var crispy = new crust("Crispy", 500);
-    var stuffed = new crust("Stuffed", 700);
-    var gluten = new crust("Gluten", 1000);
+    // var crispy = new crust("Crispy", 500);
+    // var stuffed = new crust("Stuffed", 700);
+    // var gluten = new crust("Gluten", 1000);
     $("#pick").click(function () {
         $("#price").show();
         $("#order").show();
