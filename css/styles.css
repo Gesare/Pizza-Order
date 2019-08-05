@@ -28,7 +28,7 @@ button{
     background-color: tomato;
     color: white;
 }
-#details,#pizza-amount{
+#details,#pizza-amount,#charges{
     font-style: italic;
     font-size: 26px;
 }
