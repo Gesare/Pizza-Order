@@ -25,10 +25,10 @@ body{
     display: none;
 }
 button{
-    background-color: tomato;
+    background-color: rgb(245, 118, 96);
     color: white;
 }
-#details,#pizza-amount,#charges{
+#details,#pizza-amount,#charges,#total{
     font-style: italic;
     font-size: 26px;
 }
