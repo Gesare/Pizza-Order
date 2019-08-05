@@ -9,79 +9,65 @@ Order.prototype.aboutOrder = function () {
     return this.pizzaSize + "," + this.pizzaCrust + "," + this.pizzaToppings + "," + this.pizzaNumber;
 }
 
-
-
-
-
 // UI Logic
 $(document).ready(function () {
     $('form#ordering').submit(function (event) {
         event.preventDefault();
-        var newOrder;
+
+        var choosenSize = $("input[name='size']:checked").val();
         var sizedPrice;
-        if ($("input[name='size']:checked").val() === "Small") {
-            var choosenSize = $("input[name='size']:checked").val();
+        if (choosenSize === "Small") {
             sizedPrice = 1800;
         }
-        else if ($("input[name='size']:checked").val() === "Medium") {
-            var choosenSize = $("input[name='size']:checked").val();
+        else if (choosenSize === "Medium") {
             sizedPrice = 3000;
         }
         else {
-            var choosenSize = $("input[name='size']:checked").val();
             sizedPrice = 5000;
         }
+        var choosenCrust = $("input[name='crust']:checked").val();
         var crustPrice;
-        if (($("input[name='crust']:checked").val() === "Crispy") || ($("input[name='crust']:checked").val() === "Stuffed")) {
-            var choosenCrust = $("input[name='crust']:checked").val();
+        if ((choosenCrust === "Crispy") || (choosenCrust === "Stuffed")) {
             crustPrice = 500;
         }
         else {
-            var choosenCrust = $("input[name='crust']:checked").val();
             crustPrice = 700;
         }
         var choosenToppings = [];
-        // $("#toppings option:selected").text().each(function (index,value) {
-        //     choosenToppings.push($(this).val());
-            
-        function topping(choosenToppings) {
-            var specialTopping = 0;
-            for (var top = 0; top < choosenToppings.length; top++) {
-                if (choosenToppings[top] === "Mushrooms") {
-                    specialTopping += 600;
-                }
-                else if ((choosenToppings[top] === "Onions") || (choosenToppings[top] === "Green peppers")) {
-                    specialTopping += 300;
-                }
-                else if (choosenToppings[top] === "Pepperoni") {
-                    specialTopping += 700;
-                }
-                else if (choosenToppings === "Bacon and shrimp") {
-                    specialTopping += 1000;
-                }
-                else if ((choosenToppings === "Barbecue sauce and chicken") || (choosenToppings === "Taco toppings")) {
-                    specialTopping += 1200;
-                }
-                else {
-                    specialTopping += 500;
-                }
-
+        $("#toppings option:selected").each(function () {
+            choosenToppings.push($(this).val());
+        });
+        var addToppings = 0;
+        for (var top = 0; top < choosenToppings.length; top++) {
+            if (choosenToppings[top] === "Mushrooms") {
+                addToppings += 600;
             }
-            return specialTopping;
+            else if ((choosenToppings[top] === "Onions") || (choosenToppings[top] === "Green peppers")) {
+                addToppings += 300;
+            }
+            else if (choosenToppings[top] === "Pepperoni") {
+                addToppings += 700;
+            }
+            else if (choosenToppings === "Bacon and shrimp") {
+                addToppings += 1000;
+            }
+            else if ((choosenToppings === "Barbecue sauce and chicken") || (choosenToppings === "Taco toppings")) {
+                addToppings += 1200;
+            }
+            else {
+                addToppings += 500;
+            }
         }
-    });
+        var choosenNumber = parseInt($("#number").val());
+        var newOrder = new Order(choosenSize, choosenCrust, addToppings, choosenNumber)
 
-    // var newOrder = new Order(choosenSize,choosenCrust,specialTopping,number);
-    // console.log(newOrder);
-    // console.log(specialTopping);
+    });
 
     $("#pick").click(function () {
         $("#price").show();
-        
-        // $("#pizza-amount").text()=sizedPrice+crustPrice+specialTopping+" Rwf";
+        $("#details").text(newOrder);
+        $("#pizza-amount").text() = sizedPrice + crustPrice + specialTopping + " Rwf";
         $("#order").show();
-        // $('ul#details').append("<li><span>" +newOrder.aboutOrder() +"</span></li>");
-        // $("#details").val()=(choosenSize+", "+choosenCrust+", "+choosenToppings)*number;
         $("#check").show();
         $("#check").click(function () {
             $("#price").show();
