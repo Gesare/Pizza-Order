@@ -183,13 +183,15 @@ $(document).ready(function () {
             var display = $("#number").val() + " " + $("input[name='size']:checked").val() + ", " + $("input[name='crust']:checked").val() + ", " + $("#toppings option:selected").val();
             $("#details").text(display);
 
-            
+
             // $("#add").show();
             // $("#price").show();
             // $("#order").show();
             $("#delivery").show();
             $("#charges").show();
-            $("#total").text() = "The total cost is: " + [2000 + (sizedPrice + crustPrice + addToppings) * pizzaNumber] + " Rwf!");
+            var total = (sizedPrice + crustPrice + addToppings) * pizzaNumber;
+            var totalPrice= "The total cost is: Rwf "+(total+2000);
+            $("#total").text(totalPrice); 
         // $("#add").show();
     });
 });
