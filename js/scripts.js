@@ -1,48 +1,30 @@
 // Business logic
-function Size(name, price) {
-    this.name = pizzaSize;
-    this.price = price;
+function Order(size,crust,topping,number,deliverance){
+    this.pizzaSize=size;
+    this.pizzaCrust=crust;
+    this.pizzaToppings=topping;
+    this.pizzaNumber=number;
+    this.pizzaDevivery=deliverance;
 }
-function Crust(name, price) {
-    this.name = crustName;
-    this.price = price;
+Order.prototype.aboutOrder=function(){
+    return this.pizzaSize+","+this.pizzaCrust+","+this.pizzaToppings+","+this.pizzaNumber+","+this.pizzaDevivery;
 }
-function Toppings(name, price) {
-    this.name = toppingName;
-    this.price = price;
-}
+// var pizzaSize = $("input[name='size']:checked").val();
 
-function Order(size, crust, topping, quantity) {
-    this.size = pizzaSize;
-    this.crust = pizzaCrust;
-    this.topping = pizzaTopping;
-    this.quantity = numberOfPizza;
-}
-var small = $("#small:checked"). val();
-var medium = $("#medium:checked"). val();
-var large = $("#large:checked"). val();
+// var pizzaCrust = $("input[name='crust']:checked").val();
 
-var crispy = $("#crispy:checked"). val();
-var stuffed = $("#stuffed:checked"). val();
-var gluten = $("#gluten:checked"). val();
-
-var topping = $('#toppings').val();
-var number
+// var pizzaTopping = $('#toppings').val();
+// var pizzaNumber = parseInt($("#number").val());
+// var pizzaPrice;
 
 
 
 
 // UI Logic
 $(document).ready(function () {
-    // var small = new size("Small", 1500);
-    // var medium = new size("Medium", 2500);
-    // var large = new size("Large", 4500);
-
-    // var crispy = new crust("Crispy", 500);
-    // var stuffed = new crust("Stuffed", 700);
-    // var gluten = new crust("Gluten", 1000);
     $("#pick").click(function () {
         $("#price").show();
+        // if ()
         $("#order").show();
         $("#check").show();
         $("#check").click(function () {
