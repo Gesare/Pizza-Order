@@ -65,15 +65,13 @@ $(document).ready(function () {
 
     $("#pick").click(function () {
         $("#price").show();
-        $("#details").text(newOrder);
-        $("#pizza-amount").text() = sizedPrice + crustPrice + specialTopping + " Rwf";
         $("#order").show();
+        $("#details").text()=choosenSize+", "+choosenCrust+", ";
+        $("#pizza-amount").text() = sizedPrice + crustPrice + specialTopping + " Rwf";
         $("#check").show();
         $("#check").click(function () {
             $("#price").show();
             $("#order").show();
-            // $("#delivery").show();
-            // $("#charges").show();
             $("#add").show();
         });
     });
