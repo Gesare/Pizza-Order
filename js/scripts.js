@@ -182,11 +182,6 @@ $(document).ready(function () {
 
             var display = $("#number").val() + " " + $("input[name='size']:checked").val() + ", " + $("input[name='crust']:checked").val() + ", " + $("#toppings option:selected").val();
             $("#details").text(display);
-
-
-            // $("#add").show();
-            // $("#price").show();
-            // $("#order").show();
             $("#delivery").show();
             $("#charges").show();
             var total = (sizedPrice + crustPrice + addToppings) * pizzaNumber;

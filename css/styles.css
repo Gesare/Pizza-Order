@@ -32,3 +32,9 @@ button{
     font-style: italic;
     font-size: 26px;
 }
+#total{
+    color: tomato;
+    background-color: white;
+    font-weight: bold;
+    border: 2px solid tomato;
+}
