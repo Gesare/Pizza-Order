@@ -16,7 +16,7 @@ it will be delivered. Additionally, when the order is to be delivered, not picke
 * it can be easy for you, if you have ubuntu into your machine
 * Edit project clearly
 ### Link to the live site:
-
+https://ahiodette.github.io/Pizza-Order/
 
  ## TECHNOLOGIES USED
  *****Best-pizza online*** was created using HTML,CSS and jQuery**
