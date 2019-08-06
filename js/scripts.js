@@ -62,6 +62,9 @@ $(document).ready(function () {
 
             var display = $("#number").val() + " " + $("input[name='size']:checked").val() + ", " + $("input[name='crust']:checked").val() + ", " + $("#toppings option:selected").val();
             $("#details").text(display);
+            var total = (sizedPrice + crustPrice + addToppings) * pizzaNumber;
+            var totalPrice = "The total cost is: Rwf " + total;
+            $("#total").text(totalPrice);
 
         });
     });
