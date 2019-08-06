@@ -26,10 +26,15 @@ https://ahiodette.github.io/Pizza-Order/
 * Make an order by choosing the ingredients, like crust, toppings as well as the prefered size
 * When you wish to be delivered at where you are, please you have to mention your location
 <<<<<<< HEAD
+<<<<<<< HEAD
 **The output:e**
 =======
 **The output:**
 >>>>>>> 38a67770606db580ba2716cbfcbe571ffc278366
+=======
+
+**The output:**
+>>>>>>> 1c85b3d795a1fcc9c663abd5d8c1f5f8d4cb2b04
 * When you press the checkout button, you will see the cost for your order accordingly
 
 ## SUPPORT AND CONTACT DETAILS
@@ -37,7 +42,11 @@ For more information, or in case you need a help, do not hesitate to contact the
 
 ## License
 <<<<<<< HEAD
+<<<<<<< HEAD
 **This application is licensed by Moringa School,August 2019, (c) Odette Ahishakiye|Allright reserved**
 =======
 **This application is licensed by Moringa School,August 2019, (c) Odette Ahishakiye|Allrights reserved**
 >>>>>>> 38a67770606db580ba2716cbfcbe571ffc278366
+=======
+**This application is licensed by Moringa School,August 2019, (c) Odette Ahishakiye|Allrights reserved**
+>>>>>>> 1c85b3d795a1fcc9c663abd5d8c1f5f8d4cb2b04
