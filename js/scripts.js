@@ -63,15 +63,6 @@ $(document).ready(function () {
             var display = $("#number").val() + " " + $("input[name='size']:checked").val() + ", " + $("input[name='crust']:checked").val() + ", " + $("#toppings option:selected").val();
             $("#details").text(display);
 
-            // $("#add").show();
-            // $(this).click(function () {
-            //     $("#add").hide();
-            //     $("#details").hide();
-            //     $("#pizza-amount").hide();
-            //     $("#price").hide();
-            //     $("#order").hide();
-
-            // })
         });
     });
     $("#deliver").click(function () {
@@ -134,14 +125,6 @@ $(document).ready(function () {
             var total = (sizedPrice + crustPrice + addToppings) * pizzaNumber;
             var totalPrice = "The total cost is: Rwf " + (total + 2000);
             $("#total").text(totalPrice);
-            // $("#add").show();
-            // $("this").click(function () {
-            //     $("#add").hide();
-            //     $("#details").hide();
-            //     $("#pizza-amount").hide();
-            //     $("#price").hide();
-            //     $("#order").hide();
-            // });
         });
     });
 });
