@@ -54,6 +54,8 @@ $(document).ready(function () {
         $("#check").click(function () {
             $("#price").show();
             $("#order").show();
+            $("#delivery").hide();
+            $("#charges").hide();
             var pizzaNumber = parseInt($("#number").val());
             var price = (sizedPrice + crustPrice + addToppings) * pizzaNumber + "Rwf";
             $("#pizza-amount").text(price);
