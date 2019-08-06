@@ -33,4 +33,4 @@ https://ahiodette.github.io/Pizza-Order/
 For more information, or in case you need a help, do not hesitate to contact the master on ahiode6@gmail.com
 
 ## License
-**This application is licensed by Moringa School,August 2019, (c) Odette Ahishakiye|Allright reserved**
+**This application is licensed by Moringa School,August 2019, (c) Odette Ahishakiye|Allrights reserved**
