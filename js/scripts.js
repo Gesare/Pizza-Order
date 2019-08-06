@@ -52,13 +52,13 @@ $(document).ready(function () {
             addToppings += 500;
         }
         $("#check").click(function () {
-            $("#price").show();
+            $("#price").hide();
             $("#order").show();
             $("#delivery").hide();
             $("#charges").hide();
             var pizzaNumber = parseInt($("#number").val());
-            var price = (sizedPrice + crustPrice + addToppings) * pizzaNumber + "Rwf";
-            $("#pizza-amount").text(price);
+            // 
+            $("#pizza-amount").hide();
 
             var display = $("#number").val() + " " + $("input[name='size']:checked").val() + ", " + $("input[name='crust']:checked").val() + ", " + $("#toppings option:selected").val();
             $("#details").text(display);
