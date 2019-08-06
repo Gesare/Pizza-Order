@@ -25,7 +25,8 @@ https://ahiodette.github.io/Pizza-Order/
 **Input:** 
 * Make an order by choosing the ingredients, like crust, toppings as well as the prefered size
 * When you wish to be delivered at where you are, please you have to mention your location
-**The output:e**
+
+**The output:**
 * When you press the checkout button, you will see the cost for your order accordingly
 
 ## SUPPORT AND CONTACT DETAILS
