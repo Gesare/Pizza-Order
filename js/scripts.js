@@ -19,8 +19,11 @@ $(document).ready(function () {
         else if (choosenSize === "Medium") {
             sizedPrice = 3000;
         }
-        else {
+        else if (choosenSize === "Large") {
             sizedPrice = 5000;
+        }
+        else {
+            alert("Please, choose the size!");
         }
         var crustPrice;
         var choosenCrust = $("input[name='crust']:checked").val();
@@ -28,28 +31,34 @@ $(document).ready(function () {
         if ((choosenCrust === "Crispy") || (choosenCrust === "Stuffed")) {
             crustPrice = 500;
         }
-        else {
+        else if (choosenCrust === "Gluten-free") {
             crustPrice = 700;
+        }
+        else {
+            alert("Please choose crust for your pizza to continue!");
         }
         var addToppings = 0;
         var choosenToppings = $("#toppings option:selected").val();
         if (choosenToppings === "Mushrooms") {
-            addToppings += 600;
+            addToppings += 1300;
         }
         else if ((choosenToppings === "Onions") || (choosenToppings === "Peppers")) {
-            addToppings += 300;
+            addToppings += 800;
         }
         else if (choosenToppings === "Pepperoni") {
-            addToppings += 700;
+            addToppings += 1500;
         }
         else if (choosenToppings === "Bacon") {
             addToppings += 1000;
         }
         else if ((choosenToppings === "Barbecue") || (choosenToppings === "Taco")) {
-            addToppings += 1200;
+            addToppings += 1800;
+        }
+        else if (choosenToppings === "Cheese") {
+            addToppings += 1500;
         }
         else {
-            addToppings += 500;
+            alert("Please choose toppings for your pizza to continue!");
         }
         $("#check").click(function () {
             $("#price").hide();
@@ -57,7 +66,7 @@ $(document).ready(function () {
             $("#delivery").hide();
             $("#charges").hide();
             var pizzaNumber = parseInt($("#number").val());
-            // 
+
             $("#pizza-amount").hide();
 
             var display = $("#number").val() + " " + $("input[name='size']:checked").val() + ", " + $("input[name='crust']:checked").val() + ", " + $("#toppings option:selected").val();
@@ -77,13 +86,16 @@ $(document).ready(function () {
         var sizedPrice;
         var choosenSize = $("input[name='size']:checked").val();
         if (choosenSize === "Small") {
-            sizedPrice = 1800;
+            sizedPrice = 2000;
         }
         else if (choosenSize === "Medium") {
             sizedPrice = 3000;
         }
-        else {
+        else if (choosenSize === "Large") {
             sizedPrice = 5000;
+        }
+        else {
+            alert("Please, choose the size!");
         }
         var crustPrice;
         var choosenCrust = $("input[name='crust']:checked").val();
@@ -91,28 +103,34 @@ $(document).ready(function () {
         if ((choosenCrust === "Crispy") || (choosenCrust === "Stuffed")) {
             crustPrice = 500;
         }
-        else {
+        else if (choosenCrust === "Gluten-free") {
             crustPrice = 700;
+        }
+        else {
+            alert("Please choose crust for your pizza to continue!");
         }
         var addToppings = 0;
         var choosenToppings = $("#toppings option:selected").val();
         if (choosenToppings === "Mushrooms") {
-            addToppings += 600;
+            addToppings += 1300;
         }
         else if ((choosenToppings === "Onions") || (choosenToppings === "Peppers")) {
-            addToppings += 300;
+            addToppings += 800;
         }
         else if (choosenToppings === "Pepperoni") {
-            addToppings += 700;
+            addToppings += 1500;
         }
         else if (choosenToppings === "Bacon") {
             addToppings += 1000;
         }
         else if ((choosenToppings === "Barbecue") || (choosenToppings === "Taco")) {
-            addToppings += 1200;
+            addToppings += 1800;
+        }
+        else if (choosenToppings === "Cheese") {
+            addToppings += 1500;
         }
         else {
-            addToppings += 500;
+            alert("Please choose toppings for your pizza to continue!");
         }
         $("#check").click(function () {
             $("#price").show();
